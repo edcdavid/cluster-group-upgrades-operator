@@ -69,24 +69,25 @@ status:
       operatorsPackagesAndChannels:
       - ptp-operator:4.9
       - sriov-network-operator:4.9
-      - performance-addon-operator:4.9      
+      - performance-addon-operator:4.9
     status:
       spoke1: Starting
       spoke2: Starting
       spoke5: Starting
       spoke6: Starting
   remediationPlan:
-  - - spoke6
-    - spoke2
-    - spoke1
-    - spoke5
+  -
+  - spoke6
+  - spoke2
+  - spoke1
+  - spoke5
   safeResourceNames:
-    cgu-common-ptp-sub-policy-config: cgu-common-ptp-sub-policy-config-kuttl
-    cgu-common-sriov-sub-policy-config: cgu-common-sriov-sub-policy-config-kuttl
-    cgu-policy3-common-ptp-sub-policy: cgu-policy3-common-ptp-sub-policy-kuttl
-    cgu-policy3-common-ptp-sub-policy-placement: cgu-policy3-common-ptp-sub-policy-placement-kuttl
-    cgu-policy4-common-sriov-sub-policy: cgu-policy4-common-sriov-sub-policy-kuttl
-    cgu-policy4-common-sriov-sub-policy-placement: cgu-policy4-common-sriov-sub-policy-placement-kuttl
+    default/cgu-common-ptp-sub-policy-config: cgu-common-ptp-sub-policy-config-kuttl
+    default/cgu-common-sriov-sub-policy-config: cgu-common-sriov-sub-policy-config-kuttl
+    default/cgu-policy3-common-ptp-sub-policy: cgu-policy3-common-ptp-sub-policy-kuttl
+    default/cgu-policy3-common-ptp-sub-policy-placement: cgu-policy3-common-ptp-sub-policy-placement-kuttl
+    default/cgu-policy4-common-sriov-sub-policy: cgu-policy4-common-sriov-sub-policy-kuttl
+    default/cgu-policy4-common-sriov-sub-policy-placement: cgu-policy4-common-sriov-sub-policy-placement-kuttl
 ---
 # MCVs
 apiVersion: view.open-cluster-management.io/v1beta1

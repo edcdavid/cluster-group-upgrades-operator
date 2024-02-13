@@ -17,8 +17,8 @@ spec:
     timeout: 240
 status:
   clusters:
-    - name: spoke1
-      state: complete      
+  - name: spoke1
+    state: complete
   computedMaxConcurrency: 2
   conditions:
   - message: All selected clusters are valid
@@ -47,18 +47,20 @@ status:
   placementRules:
   - cgu-policy5-subscriptions-placement-kuttl
   remediationPlan:
-  - - spoke1
-    - spoke2
-  - - spoke5
+  -
+  - spoke1
+  - spoke2
+  -
+  - spoke5
   safeResourceNames:
-    cgu-common-subscriptions-policy-config: cgu-common-subscriptions-policy-config-kuttl
-    cgu-default-subscription-cluster-logging: cgu-default-subscription-cluster-logging-kuttl
-    cgu-default-subscription-local-storage-operator: cgu-default-subscription-local-storage-operator-kuttl
-    cgu-default-subscription-performance-addon-operator: cgu-default-subscription-performance-addon-operator-kuttl
-    cgu-default-subscription-ptp-operator-subscription: cgu-default-subscription-ptp-operator-subscription-kuttl
-    cgu-default-subscription-sriov-network-operator-subscription: cgu-default-subscription-sriov-network-operator-subscription-kuttl
-    cgu-policy5-subscriptions: cgu-policy5-subscriptions-kuttl
-    cgu-policy5-subscriptions-placement: cgu-policy5-subscriptions-placement-kuttl
+    default/cgu-common-subscriptions-policy-config: cgu-common-subscriptions-policy-config-kuttl
+    default/cgu-default-subscription-cluster-logging: cgu-default-subscription-cluster-logging-kuttl
+    default/cgu-default-subscription-local-storage-operator: cgu-default-subscription-local-storage-operator-kuttl
+    default/cgu-default-subscription-performance-addon-operator: cgu-default-subscription-performance-addon-operator-kuttl
+    default/cgu-default-subscription-ptp-operator-subscription: cgu-default-subscription-ptp-operator-subscription-kuttl
+    default/cgu-default-subscription-sriov-network-operator-subscription: cgu-default-subscription-sriov-network-operator-subscription-kuttl
+    default/cgu-policy5-subscriptions: cgu-policy5-subscriptions-kuttl
+    default/cgu-policy5-subscriptions-placement: cgu-policy5-subscriptions-placement-kuttl
   status:
     currentBatch: 1
     currentBatchRemediationProgress:
@@ -67,6 +69,7 @@ status:
       spoke2:
         policyIndex: 0
         state: InProgress
+
 # Spoke2 mcv should be still around
 ---
 apiVersion: view.open-cluster-management.io/v1beta1

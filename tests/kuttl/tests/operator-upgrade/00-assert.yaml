@@ -44,11 +44,13 @@ status:
   placementRules:
   - cgu-policy5-subscriptions-placement-kuttl
   remediationPlan:
-  - - spoke1
-    - spoke2
-  - - spoke5
+  -
+  - spoke1
+  - spoke2
+  -
+  - spoke5
   safeResourceNames:
-    cgu-common-subscriptions-policy-config: cgu-common-subscriptions-policy-config-kuttl
-    cgu-policy5-subscriptions: cgu-policy5-subscriptions-kuttl
-    cgu-policy5-subscriptions-placement: cgu-policy5-subscriptions-placement-kuttl
+    default/cgu-common-subscriptions-policy-config: cgu-common-subscriptions-policy-config-kuttl
+    default/cgu-policy5-subscriptions: cgu-policy5-subscriptions-kuttl
+    default/cgu-policy5-subscriptions-placement: cgu-policy5-subscriptions-placement-kuttl
   status: {}

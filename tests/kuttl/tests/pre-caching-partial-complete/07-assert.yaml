@@ -35,7 +35,7 @@ status:
     reason: PrecacheSpecIsWellFormed
     status: "True"
     type: PrecacheSpecValid
-  - message: Precaching failed for 2 clusters 
+  - message: Precaching failed for 2 clusters
     reason: PartiallyDone
     status: "True"
     type: PrecachingSuceeded
@@ -73,24 +73,25 @@ status:
       operatorsPackagesAndChannels:
       - ptp-operator:4.9
       - sriov-network-operator:4.9
-      - performance-addon-operator:4.9      
+      - performance-addon-operator:4.9
     status:
       spoke1: Succeeded
       spoke2: PrecacheTimeout
       spoke5: UnrecoverableError
       spoke6: Succeeded
   remediationPlan:
-  - - spoke6
-    - spoke1
+  -
+  - spoke6
+  - spoke1
   safeResourceNames:
-    cgu-common-ptp-sub-policy-config: cgu-common-ptp-sub-policy-config-kuttl
-    cgu-common-sriov-sub-policy-config: cgu-common-sriov-sub-policy-config-kuttl
-    cgu-default-subscription-ptp-operator-subscription: cgu-default-subscription-ptp-operator-subscription-kuttl
-    cgu-default-subscription-sriov-network-operator-subscription: cgu-default-subscription-sriov-network-operator-subscription-kuttl
-    cgu-policy3-common-ptp-sub-policy: cgu-policy3-common-ptp-sub-policy-kuttl
-    cgu-policy3-common-ptp-sub-policy-placement: cgu-policy3-common-ptp-sub-policy-placement-kuttl
-    cgu-policy4-common-sriov-sub-policy: cgu-policy4-common-sriov-sub-policy-kuttl
-    cgu-policy4-common-sriov-sub-policy-placement: cgu-policy4-common-sriov-sub-policy-placement-kuttl
+    default/cgu-common-ptp-sub-policy-config: cgu-common-ptp-sub-policy-config-kuttl
+    default/cgu-common-sriov-sub-policy-config: cgu-common-sriov-sub-policy-config-kuttl
+    default/cgu-default-subscription-ptp-operator-subscription: cgu-default-subscription-ptp-operator-subscription-kuttl
+    default/cgu-default-subscription-sriov-network-operator-subscription: cgu-default-subscription-sriov-network-operator-subscription-kuttl
+    default/cgu-policy3-common-ptp-sub-policy: cgu-policy3-common-ptp-sub-policy-kuttl
+    default/cgu-policy3-common-ptp-sub-policy-placement: cgu-policy3-common-ptp-sub-policy-placement-kuttl
+    default/cgu-policy4-common-sriov-sub-policy: cgu-policy4-common-sriov-sub-policy-kuttl
+    default/cgu-policy4-common-sriov-sub-policy-placement: cgu-policy4-common-sriov-sub-policy-placement-kuttl
   status:
     currentBatch: 1
     currentBatchRemediationProgress:
@@ -100,4 +101,3 @@ status:
       spoke6:
         policyIndex: 1
         state: InProgress
-
